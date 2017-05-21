@@ -1,6 +1,22 @@
+//* NUMBERS OF CALCULATOR *//
+var displayArray = [];
+var displayNumbers = "";
+var clear = 0;
+var myCalculator = calculator();
+var numbersFknJoin = 0;
+
+function numbersInNumberBox() {
+  document.getElementById('displayTotal');
+}
+
 document.getElementById('seven').addEventListener('click', number7);
+
 function number7() {
-  document.getElementById('displayTotal').innerHTML += 7;
+    document.getElementById('displayTotal').innerHTML += 7;
+    displayArray.push(7);
+    var joinNumbers = displayArray.join('');
+    numbersFknJoin = parseInt(joinNumbers);
+    // console.log(numbersFknJoin);
 }
 
 document.getElementById('eight').addEventListener('click', number8);
@@ -52,3 +68,5 @@ function numberDoubleZero() {
   document.getElementById('displayTotal').innerHTML += 00;
 }
 }
+
+//* OPERATOR BUTTONS *//
