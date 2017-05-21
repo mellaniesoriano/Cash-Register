@@ -100,4 +100,11 @@ function numberDoubleZero() {
 }
 
 //* OPERATOR BUTTONS *//
+document.getElementById('add').addEventListener('click', addNums);
 
+function addNums() {
+  var test = myCalculator.add(numbersFknJoin);
+  var anotherVar = myCalculator.getTotal();
+  document.getElementById('displayTotal').innerHTML = [];
+  // console.log(anotherVar);
+};
