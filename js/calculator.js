@@ -7,7 +7,7 @@ function calculator() {
     if(typeof x === "number"){
       return true;
     } else {
-      throw error;
+      throw new Error('error');
     }
   }
 
