@@ -24,8 +24,10 @@ function calculator() {
 
 
    function add(x) {
+    console.log("adding... ", x);
     validate(x);
     total += x;
+    console.log("total... ", total);
    }
 
 
