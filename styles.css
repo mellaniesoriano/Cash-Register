@@ -1,3 +1,11 @@
+body{
+  background-image: url(https://s-media-cache-ak0.pinimg.com/564x/31/73/da/3173daa43ed2fe10f649ec2bf3b68fc4.jpg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  padding: 50px;
+}
+
 #header {
   font-size: 45px;
   color: blue;
@@ -5,62 +13,97 @@
 
 #displayBox {
   background-color: orange;
+  font-size: 40px;
   height: 50px;
-  width: 300px;
+  width: 31%;
   height: 50px;
   border: 1px solid black;
-  border-style:
-
 }
 
 #numberBox {
   background-color: grey;
-  height: 700px;
-  width: 350px;
+  height: 200%;
+  width: 31%;
   border: 1px solid black;
+  text-align: center;
 }
 
 #rowOne {
-  font-size: 45px;
+  font-size: 20px;
   border: none;
   color: white;
-  padding: 20px 20px;
+  padding: 15px 0px 15px 0px;
   font-size: 25px;
 }
 
 #rowTwo {
-  font-size: 45px;
+  font-size: 20px;
   border: none;
   color: white;
-  padding: 20px 20px;
+  padding-bottom: 15px;
   font-size: 25px;
 }
 
 #rowThree {
-  font-size: 45px;
+  font-size: 20px;
   border: none;
   color: white;
-  padding: 20px 20px;
+  padding-bottom: 15px;
   font-size: 25px;
 }
 
 #rowFour {
-  font-size: 45px;
+  font-size: 20px;
   border: none;
   color: white;
-  padding: 20px 20px;
+  padding-bottom: 15px;
   font-size: 25px;
 }
 
-#equals{
-  float: right;
-}
-
 .numbers {
-  font-size: 50px;
+  font-size: 20px;
   padding: 20px;
+  margin: 5px;
 }
 .operators{
-  font-size: 50px;
+  font-size: 20px;
   padding: 20px;
+  margin: 5px;
+}
+
+
+
+/* fix background & make calculator transparent */
+
+
+
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -86px;
+  margin-left: -89px;
+  text-align: center;
+}
+
+button {
+  -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  /*display: block;*/
+  margin: 20px auto;
+  max-width: 180px;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 20px 30px;
+  color: rgba(25, 29, 33, 0.8);
+  box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+}
+
+
+button:hover {
+  color: rgba(30, 22, 54, 0.85);
+  box-shadow: rgba(213, 57, 55, 0.8) 0 0px 0px 40px inset;
 }
