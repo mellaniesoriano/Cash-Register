@@ -1,6 +1,7 @@
 function calculator() {
   var total = 0;
   var register = 0;
+  var clear = '';
 
   function load(x) {
     total = x;
@@ -42,8 +43,7 @@ function calculator() {
    }
 
    function clearMemory(){
-    register = '';
-    return register;
+    return clear;
    }
 
    return {
