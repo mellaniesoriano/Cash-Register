@@ -1,32 +1,28 @@
 body{
-  background-image: url(https://s-media-cache-ak0.pinimg.com/564x/31/73/da/3173daa43ed2fe10f649ec2bf3b68fc4.jpg);
+  background-image: url(http://i68.tinypic.com/20078yc.png);
   background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: center;
-  padding: 50px;
-}
-
-#header {
-  font-size: 45px;
-  color: blue;
+  background-size: 550px;
+  background-position: right;
+  background-color: #F59D3C;
 }
 
 #displayBox {
-  background-color: orange;
-  font-size: 40px;
+  background-color: #954997;
+  font-size: 50px;
+  width: 48%;
   height: 50px;
-  width: 31%;
-  height: 50px;
-  border: 1px solid black;
+  text-align: right;
+  padding: 2px 5px 15px 5px;
+  font-family: 'Fredoka One', cursive;
+  border-radius: 4px;
+  color: #fff;
 }
 
 #numberBox {
-  background-color: grey;
-  height: 200%;
-  width: 31%;
-  border: 1px solid black;
+  height: 588px;
+  width: 48%;
   text-align: center;
-}
+  }
 
 #rowOne {
   font-size: 20px;
@@ -60,15 +56,19 @@ body{
   font-size: 25px;
 }
 
-.numbers {
-  font-size: 20px;
-  padding: 20px;
-  margin: 5px;
-}
+
 .operators{
   font-size: 20px;
   padding: 20px;
   margin: 5px;
+  background-color: #c23228;
+}
+
+.actions {
+  font-size: 14px;
+  padding: 20px;
+  margin: 5px;
+  background-color: #c23228;
 }
 
 
@@ -76,34 +76,105 @@ body{
 /* fix background & make calculator transparent */
 
 
-
-.wrap {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -86px;
-  margin-left: -89px;
-  text-align: center;
-}
-
-button {
+button.numbers {
   -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
   -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
   -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
   -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
   transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-  /*display: block;*/
-  margin: 20px auto;
-  max-width: 180px;
+  width: 110px;
   text-decoration: none;
   border-radius: 4px;
   padding: 20px 30px;
-  color: rgba(25, 29, 33, 0.8);
-  box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+  color: #F1D7C5;
+  box-shadow: #954997 0 0px 0px 1px inset;
+  border: 0px;
+  font-family: 'Fredoka One', cursive;
+  background-color: #954997;
+  font-size: 30px;
+  padding: 20px;
+  margin: 5px;
+}
+
+button.operators {
+  -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  width: 110px;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 20px 30px;
+  color: rgba(0, 0, 0, 1);
+  box-shadow: #A7CB46 0 0px 0px 1px inset;
+  border: 0px;
+  font-family: 'Fredoka One', cursive;
+  background-color: #A7CB46;
+  font-size: 30px;
+  padding: 20px;
+  margin: 5px;
+
+}
+
+button#equals {
+  -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  width: 300px;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 20px 30px;
+  color: rgba(0, 0, 0, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.7) 0 0px 0px 0px inset;
+  border: 0px;
+  font-family: 'Fredoka One', cursive;
+
 }
 
 
 button:hover {
-  color: rgba(30, 22, 54, 0.85);
-  box-shadow: rgba(213, 57, 55, 0.8) 0 0px 0px 40px inset;
+  color: rgba(255, 255, 255, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.85) 0 0px 0px 40px inset;
+  border: 0px;
+  font-family: 'Fredoka One', cursive;
+}
+
+button#equals:hover {
+  color: rgba(255, 255, 255, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.85) 0 0px 0px 40px inset;
+  border: 0px;
+  font-family: 'Fredoka One', cursive;
+}
+
+
+button.actions {
+   -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  width: 150px;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 20px 30px;
+  color: #000000;
+  box-shadow: #849e35 0 0px 0px 1px inset;
+  border: 0px;
+  font-family: 'Fredoka One', cursive;
+  background-color: #849e35;
+  font-size: 12px;
+  margin: 5px;
+  padding: 30px;
+
+}
+
+
+button.actions:hover {
+  color: rgba(255, 255, 255, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.85) 0 0px 0px 40px inset;
+  border: 0px;
+  font-family: 'Fredoka One', cursive;
 }
