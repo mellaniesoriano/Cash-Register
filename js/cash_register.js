@@ -179,14 +179,16 @@ depositCash.addEventListener('click', depositGalleons);
 
 function depositGalleons() {
   displayNums = myCalculator.saveMemory();
-  displayBox.innerHTML = '';
-  console.log(displayNums);
+  displayBox.innerHTML = displayNums;
+  // console.log(displayNums);
 }
 
 // WITHDRAW
+withdrawCash.addEventListener('click', withdrawGalleons);
+
 function withdrawGalleons() {
   displayNums = myCalculator.deleteMemory();
-  displayBox.innerHTML = '';
-  console.log(displayNums);
+  displayBox.innerHTML = myCalculator.clearMemory();
+  // console.log(displayNums);
 }
 

@@ -56,7 +56,6 @@ body{
   font-size: 25px;
 }
 
-
 .operators{
   font-size: 20px;
   padding: 20px;
@@ -82,7 +81,7 @@ button.numbers {
   -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
   -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
   transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-  width: 110px;
+  width: 113px;
   text-decoration: none;
   border-radius: 4px;
   padding: 20px 30px;
@@ -91,9 +90,17 @@ button.numbers {
   border: 0px;
   font-family: 'Fredoka One', cursive;
   background-color: #954997;
-  font-size: 30px;
+  font-size: 24px;
   padding: 20px;
-  margin: 5px;
+  margin: 4px;
+}
+
+button.numbers:hover {
+  color: #000000;
+  box-shadow: rgba(211, 164, 214, 0.8) 0 0px 0px 40px inset;
+  border: 0px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 32px;
 }
 
 button.operators {
@@ -111,9 +118,9 @@ button.operators {
   border: 0px;
   font-family: 'Fredoka One', cursive;
   background-color: #A7CB46;
-  font-size: 30px;
+  font-size: 24px;
   padding: 20px;
-  margin: 5px;
+  margin: 4px;
 
 }
 
@@ -123,7 +130,7 @@ button#equals {
   -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
   -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
   transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-  width: 300px;
+  width: 328px;
   text-decoration: none;
   border-radius: 4px;
   padding: 20px 30px;
@@ -134,19 +141,20 @@ button#equals {
 
 }
 
-
-button:hover {
-  color: rgba(255, 255, 255, 0.8);
-  box-shadow: rgba(0, 0, 0, 0.85) 0 0px 0px 40px inset;
+button.operators:hover {
+  color: #ffffff;
+  box-shadow: rgba(134, 165, 48, 0.8) 0 0px 0px 40px inset;
   border: 0px;
   font-family: 'Fredoka One', cursive;
+  font-size: 32px;
 }
 
 button#equals:hover {
-  color: rgba(255, 255, 255, 0.8);
-  box-shadow: rgba(0, 0, 0, 0.85) 0 0px 0px 40px inset;
+  color: #ffffff;
+  box-shadow: rgba(134, 165, 48, 0.8) 0 0px 0px 40px inset;
   border: 0px;
   font-family: 'Fredoka One', cursive;
+  font-size: 32px;
 }
 
 
@@ -156,25 +164,27 @@ button.actions {
   -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
   -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
   transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-  width: 150px;
+  width: 155px;
   text-decoration: none;
   border-radius: 4px;
   padding: 20px 30px;
   color: #000000;
-  box-shadow: #849e35 0 0px 0px 1px inset;
+  box-shadow: #ffcc96 0 0px 0px 1px inset;
   border: 0px;
   font-family: 'Fredoka One', cursive;
-  background-color: #849e35;
+  background-color: #ffcc96;
   font-size: 12px;
   margin: 5px;
-  padding: 30px;
+  padding: 20px;
+  height: 64px;
 
 }
 
 
 button.actions:hover {
   color: rgba(255, 255, 255, 0.8);
-  box-shadow: rgba(0, 0, 0, 0.85) 0 0px 0px 40px inset;
+  box-shadow: rgba(245, 157, 60, 0.45) 0 1px 0px 40px inset;
   border: 0px;
   font-family: 'Fredoka One', cursive;
+  letter-spacing: 2px;
 }
