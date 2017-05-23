@@ -1,6 +1,8 @@
 var myCalculator = calculator();
 var displayNums = '';
 var operatorSymbol = '';
+var num1 = 0;
+var num2 = 0;
 
 // EVERYTHING WILL BE STORED IN HERE
 displayBox.innerHTML = displayNums;
@@ -107,16 +109,16 @@ function result() {
   var firstNum = parseFloat(num1);
   var secondNum = parseFloat(num2);
   if (operatorSymbol === '/') {
-    displayNums = myCalculator.divide(firstNum, secondNum);
+    displayNums = myCalculator.divide(secondNum, firstNum);
     displayBox.innerHTML = displayNums;
   } else if (operatorSymbol === '*') {
-    displayNums = myCalculator.multiply(firstNum, secondNum);
+    displayNums = myCalculator.multiply(secondNum, firstNum);
     displayBox.innerHTML = displayNums;
   } else if (operatorSymbol === '-') {
-    displayNums = myCalculator.subtract(firstNum, secondNum);
+    displayNums = myCalculator.subtract(secondNum, firstNum);
     displayBox.innerHTML = displayNums;
   } else if (operatorSymbol === '+') {
-    displayNums = myCalculator.add(firstNum, secondNum);
+    displayNums = myCalculator.add(secondNum, firstNum);
     displayBox.innerHTML = displayNums;
   }
 }
@@ -138,6 +140,7 @@ getBalance.addEventListener('click', getMemory);
 
 function getMemory() {
   displayNums = myCalculator.recallMemory();
+  displayBox.innerHTML = myCalculator.recallMemory();
 }
 
 // DEPOSIT
@@ -146,11 +149,12 @@ depositCash.addEventListener('click', depositGalleons);
 function depositGalleons() {
   displayNums = myCalculator.saveMemory();
   displayBox.innerHTML = '';
+  console.log(displayNums);
 }
 
 // WITHDRAW
 function withdrawGalleons() {
-  displayNums = myCalculator.saveMemory();
+  displayNums = myCalculator.deleteMemory();
   displayBox.innerHTML = '';
 }
 

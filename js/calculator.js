@@ -7,8 +7,8 @@ function calculator() {
     return total;
   }
 
-  function add(x) {
-    total += x;
+  function add(x, y) {
+    total = x + y;
     return total;
   }
 
