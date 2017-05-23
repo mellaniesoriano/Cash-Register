@@ -1,4 +1,66 @@
-#test {
-  font-size: 45px,
+#header {
+  font-size: 45px;
   color: blue;
+}
+
+#displayBox {
+  background-color: orange;
+  height: 50px;
+  width: 300px;
+  height: 50px;
+  border: 1px solid black;
+  border-style:
+
+}
+
+#numberBox {
+  background-color: grey;
+  height: 700px;
+  width: 350px;
+  border: 1px solid black;
+}
+
+#rowOne {
+  font-size: 45px;
+  border: none;
+  color: white;
+  padding: 20px 20px;
+  font-size: 25px;
+}
+
+#rowTwo {
+  font-size: 45px;
+  border: none;
+  color: white;
+  padding: 20px 20px;
+  font-size: 25px;
+}
+
+#rowThree {
+  font-size: 45px;
+  border: none;
+  color: white;
+  padding: 20px 20px;
+  font-size: 25px;
+}
+
+#rowFour {
+  font-size: 45px;
+  border: none;
+  color: white;
+  padding: 20px 20px;
+  font-size: 25px;
+}
+
+#equals{
+  float: right;
+}
+
+.numbers {
+  font-size: 50px;
+  padding: 20px;
+}
+.operators{
+  font-size: 50px;
+  padding: 20px;
 }
