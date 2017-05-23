@@ -7,31 +7,44 @@
 </head>
 <body>
 
-  <div id="test">Here is a test</div>
+  <div id="header"></div>
 
   <div id="content">
-    <dix id="displayBox"></dix>
+    <div id="displayBox">0</div>
     <div id="numberBox">
-      <button id="seven" class="numbers">7</button>
-      <button id="eight" class="numbers">8</button>
-      <button id="nine" class="numbers">9</button>
-      <button id="four" class="numbers">4</button>
-      <button id="five" class="numbers">5</button>
-      <button id="six" class="numbers">6</button>
-      <button id="one" class="numbers">1</button>
-      <button id="two" class="numbers">2</button>
-      <button id="three" class="numbers">3</button>
-      <button id="zero" class="numbers">0</button>
-      <button id="doubleZero" class="numbers">00</button>
-      <button id="decimal" class="numbers">.</button>
+      <div id="rowOne">
+        <button id="seven" class="numbers">7</button>
+        <button id="eight" class="numbers">8</button>
+        <button id="nine" class="numbers">9</button>
+         <button id="divide" class="operators">/</button>
+      </div>
+      <div id="rowTwo">
+        <button id="four" class="numbers">4</button>
+        <button id="five" class="numbers">5</button>
+        <button id="six" class="numbers">6</button>
+        <button id="multiply" class="operators">*</button>
+      </div>
+      <div id="rowThree">
+        <button id="one" class="numbers">1</button>
+        <button id="two" class="numbers">2</button>
+        <button id="three" class="numbers">3</button>
+        <button id="subtract" class="operators">-</button>
+      </div>
+      <div id="rowFour">
+        <button id="zero" class="numbers">0</button>
+        <button id="doubleZero" class="numbers">00</button>
+        <button id="decimal" class="numbers">.</button>
+        <button id="add" class="operators">+</button>
+      </div>
+       <div periodd="operatingBox">
+        <button id="equals" class="operators">=</button>
+
+
+
+
     </div>
-    <div periodd="operatingBox">
-      <button id="divide" class="operators">/</button>
-      <button id="multiply" class="operators">*</button>
-      <button id="subtract" class="operators">-</button>
-      <button id="add" class="operators">+</button>
-      <button id="equals" class="operators">=</button>
     </div>
+
     <div periodd="actionsBox">
       <button id="clear" class="actions">CLEAR</button>
       <button id="getBalance" class="actions">GET BALANCE</button>
