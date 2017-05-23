@@ -1,8 +1,8 @@
 var myCalculator = calculator();
 var displayNums = '';
 var operatorSymbol = '';
-var num1 = 0;
-var num2 = 0;
+var num1 = '';
+var num2 = '';
 
 // EVERYTHING WILL BE STORED IN HERE
 displayBox.innerHTML = displayNums;
@@ -11,9 +11,9 @@ displayBox.innerHTML = displayNums;
 // ONE
 one.addEventListener('click', number1);
 function number1() {
-  displayNums = 1;
+  displayNums = '1';
   displayBox.innerHTML += displayNums;
-  num1 += 1;
+  num1 += '1';
 }
 // TWO
 two.addEventListener('click', number2);
@@ -25,9 +25,9 @@ function number2() {
 // THREE
 three.addEventListener('click', number3);
 function number3() {
-  displayNums = 3;
+  displayNums = '3';
   displayBox.innerHTML += displayNums;
-  num1 += 3;
+  num1 += '3';
 }
 // FOUR
 four.addEventListener('click', number4);
@@ -39,44 +39,44 @@ function number4() {
 // FIVE
 five.addEventListener('click', number5);
 function number5() {
-  displayNums = 5;
+  displayNums = '5';
   displayBox.innerHTML += displayNums;
-  num1 += 5;
+  num1 += '5';
 }
 // SIX
 six.addEventListener('click', number6);
 function number6() {
-  displayNums = 6;
+  displayNums = '6';
   displayBox.innerHTML += displayNums;
-  num1 += 6;
+  num1 += '6';
 }
 // SEVEN
 seven.addEventListener('click', number7);
 function number7() {
-  displayNums = 7;
+  displayNums = '7';
   displayBox.innerHTML += displayNums;
-  num1 += 7;
+  num1 += '7';
 }
 // EIGHT
 eight.addEventListener('click', number8);
 function number8() {
-  displayNums = 8;
+  displayNums = '8';
   displayBox.innerHTML += displayNums;
-  num1 += 8;
+  num1 += '8';
 }
 // NINE
 nine.addEventListener('click', number9);
 function number9() {
-  displayNums = 9;
+  displayNums = '9';
   displayBox.innerHTML += displayNums;
-  num1 += 9;
+  num1 += '9';
 }
 // ZERO
 zero.addEventListener('click', number0);
 function number0() {
-  displayNums = 0;
+  displayNums = '0';
   displayBox.innerHTML += displayNums;
-  num1 += 0;
+  num1 += '0';
 }
 // DOUBLE ZERO
 doubleZero.addEventListener('click', numberDblZero);
