@@ -34,7 +34,7 @@ function calculator() {
 
    function saveMemory(){
     register += total;
-    return register;
+    return clear;
    }
 
    function deleteMemory() {
