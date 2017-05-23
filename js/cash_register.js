@@ -104,6 +104,40 @@ function addNums() {
   operatorSymbol = '+';
 }
 
+//* OPERATOR BUTTONS *//
+//DIVIDE
+divide.addEventListener('click', divideNums);
+function divideNums(){
+  displayNums += '/';
+  displayBox.innerHTML = displayNums;
+  num1 = '';
+  num2 = displayNums;
+  operatorSymbol = '/';
+}
+
+//* OPERATOR BUTTONS *//
+//MULTIPLY
+multiply.addEventListener('click', multiplyNums);
+function multiplyNums(){
+  displayNums += '*';
+  displayBox.innerHTML = displayNums;
+  num1 = '';
+  num2 = displayNums;
+  operatorSymbol = '*';
+}
+
+//* OPERATOR BUTTONS *//
+//SUBTRACT
+subtract.addEventListener('click', subtractNums);
+function subtractNums(){
+  displayNums += '-';
+  displayBox.innerHTML = displayNums;
+  num1 = '';
+  num2 = displayNums;
+  operatorSymbol = '-';
+}
+
+//* EXECUTING THE OPERATORS *//
 equals.addEventListener('click', result);
 function result() {
   var firstNum = parseFloat(num1);
@@ -122,10 +156,6 @@ function result() {
     displayBox.innerHTML = displayNums;
   }
 }
-
-// divide.addEventListener('click', divideNums);
-// multiply.addEventListener('click', multiplyNums);
-// subtract.addEventListener('click', subtractNums);
 
 // CLEAR DISPLAY
 clear.addEventListener('click', clearDisplay);
