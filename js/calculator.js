@@ -1,73 +1,60 @@
 function calculator() {
-
   var total = 0;
-  var memory = 0;
+  var register = 0;
 
-    function validate(x){
-    if(typeof x === "number"){
-      return true;
-    } else {
-      throw new Error('error');
-    }
+  function load(x) {
+    total = x;
+    return total;
   }
 
-   function load (x){
-    total = x;
-    validate(x);
-     return total;
-   }
+  function add(x) {
+    total += x;
+    return total;
+  }
 
-
-   function getTotal(){
+  function subtract(x, y) {
+    total = x - y;
     return total;
    }
 
-
-   function add(x) {
-    console.log("adding... ", x);
-    validate(x);
-    total += x;
-    console.log("total... ", total);
+   function multiply(x, y) {
+     total = x * y;
+     return total;
    }
 
-
-   function subtract(x){
-    validate(x);
-    total -= x;
-   }
-
-   function multiply(x){
-    validate(x);
-    total *= x;
-   }
-
-   function divide(x){
-    validate(x);
-    total /= x;
+   function divide(x, y) {
+     total = x / y;
+     return total;
    }
 
    function recallMemory(){
-    return memory;
+    return register;
    }
 
    function saveMemory(){
-    memory = total;
+    register += total;
+    return register;
+   }
+
+   function deleteMemory() {
+    register -= total;
+    return register;
    }
 
    function clearMemory(){
-    memory = 0;
+    register = '';
+    return register;
    }
 
    return {
     load: load,
-    getTotal: getTotal,
     add: add,
     subtract: subtract,
     multiply: multiply,
     divide: divide,
     recallMemory: recallMemory,
+    deleteMemory: deleteMemory,
     saveMemory: saveMemory,
     clearMemory: clearMemory
    };
-
-}
+ }
